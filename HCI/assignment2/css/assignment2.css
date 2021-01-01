@@ -1,0 +1,560 @@
+/*---- Copyright reserved by 1805967 ----*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e4f9f5;
+  margin: 0;
+}
+
+p {
+  font-family: Open Sans, sans-serif;
+  line-height: 1.4em;
+  letter-spacing: 0.1em;
+}
+
+
+/* ---------------------------------------------------------------------------
+                                  header part
+------------------------------------------------------------------------------*/
+
+#header-banner {
+    background-image: linear-gradient(to bottom right, #40514e, #30e3ca);
+    background-size: cover;
+    width: 76%;
+    height: 300px;
+    float: right;
+    z-index: -100;
+
+  }
+  header h1 {
+    margin: auto;
+    width: auto;
+    color: #fff;
+    padding: 100px;
+    position: relative;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 60px;
+  }
+  header h3 {
+  
+    color: black;
+    padding: 3rem  4rem;
+    position: absolute;
+    top: 9rem; 
+    left: 40rem;
+    font-family: 'Parisienne', cursive;
+    text-align: center;
+    font-size: 20px;
+  }
+nav {
+    position: fixed; 
+    font-size: 22px;
+	  margin: 0;
+    width: 20%;
+    height: 20%;
+    text-align: center;
+    
+}
+ul {
+  list-style: none;
+	padding: 0em 0em;
+  margin-bottom: 80%;
+}
+li {
+    border-bottom:2px solid black;
+}
+
+li a {
+    display: block;
+	background: #3fc1c9;
+    padding: 70px 20px;
+    font-family: 'Bowlby One SC', cursive;
+  color: white;;
+	text-decoration: none;
+	-webkit-transition: 0.2s linear;
+	-moz-transition: 0.2s linear;
+	-ms-transition: 0.2s linear;
+	-o-transition: 0.2s linear;
+  transition: 0.2s linear;
+ 
+}
+li a:hover {
+	background: #30e3ca;
+	color:whitesmoke;
+}
+.hamburger,  #hamburg_check {
+  display: none;
+  font-size: 60px;
+  left: 0;
+  color: black;
+  z-index: 5000;
+}
+
+
+  .mn-container::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+/* ---------------------------------------------------------------------------
+                        about section
+------------------------------------------------------------------------------*/
+
+
+
+.lines1::after {
+  content: "";
+  display: both;
+  clear: both;
+}
+.col {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+#image1 img{
+  height: 280px;
+  width: 280px;
+  top: 80%;
+  transform: translate(0, 80%);
+}
+
+.box-12 {
+  transition: box-shadow .3s;
+  width: auto;
+  height: 400%;
+  margin: 5rem;
+  display: flex;
+  border-radius:13px;
+  border: 1px solid #ccc;
+  background: whitesmoke;
+  float: left;
+  margin-left: 28%;
+  font-family: 'Georgia', sans-serif;
+  box-shadow: 0 0 14px rgba(33,33,33,.2); 
+}
+  .about_text {
+    margin-bottom: 50px;
+    top: 5rem;
+  }
+
+  .about_text  h1{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 22px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 1.5em;
+    letter-spacing: 0.2em;
+  }
+  .about_text p{
+    font-size: 20px;
+    margin-top:1%;
+    margin-right: 5%;
+    margin-left: 2%;
+    padding: 0 20px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    line-height: 1.4em;
+   
+    color: black;
+  }
+  
+  .box-12:hover {
+    box-shadow: 0 0 14px #008c76ff; 
+  }
+
+
+  
+
+/* ---------------------------------------------------------------------------
+                        project section
+------------------------------------------------------------------------------*/
+
+.box-2 {
+  transition: box-shadow .3s;
+  width: auto;
+  height: 400%;
+  margin: 5em ;
+  display: flex;
+  border-radius:13px;
+  border: 1px solid #ccc;
+  background: whitesmoke;
+  float: left;
+  margin-left: 28%;
+  box-shadow: 0 0 14px rgba(33,33,33,.2); 
+}
+.clients1 {
+  margin-bottom: 50px;
+  top: 5rem;
+}
+
+.clients1  h1{
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+  font-size: 40px;
+  text-align: center;
+  line-height: 1.5em;
+  letter-spacing: 0.2em;
+}
+
+.clients1 p{
+  font-size: 20px;
+  margin-top:1%;
+  margin-right: 5%;
+  margin-left: 2%;
+  padding: 0 20px;
+  text-align: center;
+ 
+  color: black;
+}
+
+.box-2:hover {
+  box-shadow: 0 0 14px #008c76ff; 
+}
+
+
+/* ---------------------------------------------------------------------------
+                        Service section
+------------------------------------------------------------------------------*/
+.box-3 {
+  transition: box-shadow .3s;
+  width: auto;
+  height: 400%;
+  margin: 5em ;
+  display: flex;
+  border-radius:13px;
+  border: 1px solid #ccc;
+  background: whitesmoke;
+  float: left;
+  margin-left: 28%;
+  box-shadow: 0 0 14px rgba(33,33,33,.2); 
+}
+.box-3:hover {
+  box-shadow: 0 0 14px #008c76ff; 
+}
+
+.box-3 h1 {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+  font-size: 40px;
+  text-align: center;
+  line-height: 1.5em;
+  letter-spacing: 0.2em;
+}
+
+.clients1 {
+  margin-bottom: 50px;
+  top: 5rem;
+  text-align: center;
+}
+
+.button {
+  width: 150px;
+  padding: 15px 32px;
+  background: none;
+  border: 2px solid #6D214F;
+  border-radius: 5px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  font-family: Open Sans, sans-serif;
+  font-size: 20px;
+  display: inline-block;
+  margin: 0;
+  transition: 0.5s ease-in-out;
+  position: relative;
+  margin-bottom: 5%;
+}
+.button:hover {
+  display: inline-block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #30e3ca;
+  color: #3a3a3a;
+}
+
+
+
+
+/* ---------------------------------------------------------------------------
+                                   Blog section                                        
+------------------------------------------------------------------------------*/
+
+.box-4 {
+  transition: box-shadow .3s;
+  width: 75.5%;
+  height: 400%;
+  margin: 5em auto;
+  display: flex;
+  border-radius:13px;
+  border: 1px solid #FEF4F2;
+  background: whitesmoke;
+  float: left;
+  margin-left: 24%;
+  font-family: 'Georgia', sans-serif;
+  margin-right: 200px;
+  box-shadow: 0 0 14px rgba(33,33,33,.2); 
+}
+.box-4:hover {
+  box-shadow: 0 0 14px #008c76ff; 
+}
+
+.box-4 h1 {
+  text-align: center;
+}
+
+
+ .box-5 {
+  transition: box-shadow .3s;
+  width: auto;
+  height: auto;
+  margin: 50px;
+  padding:20px;
+  border-radius:10px;
+  border: 1px solid #ccc;
+  background: whitesmoke;
+  float: left;
+  font-family: 'Georgia', sans-serif;
+  text-align: center;
+}
+.box-5 a{
+  text-decoration: none;
+  color: black;
+}
+.box-5:hover {
+  box-shadow: 0 0 14px #008c76ff;  
+}
+.box-5 p {
+  font-size: 18px;
+  font-family: "Roboto";
+}
+
+
+
+ .box-6 {
+ transition: box-shadow .3s;
+ width: auto;
+ height: auto;
+ margin: 50px;
+ padding:20px;
+ border-radius:10px;
+ border: 1px solid #ccc;
+ background: whitesmoke;
+ float: left;
+ text-align: center;
+ 
+ 
+}
+.box-6:hover {
+  box-shadow: 0 0 14px #008c76ff; 
+}
+.box-6 a{
+text-decoration: none;
+color: black;
+}
+ .box-6 p {
+font-size: 18px;
+font-family: "Roboto";
+}
+
+
+.box-7 {
+ transition: box-shadow .3s;
+ width: auto;
+ height: auto;
+ margin: 50px;
+ padding:20px;
+ border-radius:10px;
+ border: 1px solid #ccc;
+ background: whitesmoke;
+ float: left;
+ text-align: center;
+ 
+}
+.box-7:hover {
+  box-shadow: 0 0 14px #008c76ff; 
+}
+.box-7 a{
+text-decoration: none;
+color: black;
+}
+ .box-7 p {
+font-size: 18px;
+font-family: "Roboto";
+}
+
+
+/* ---------------------------------------------------------------------------
+                        Contact section
+------------------------------------------------------------------------------*/
+
+.box-0 {
+  transition: box-shadow .3s;
+  width: 60%;
+  height: 400%;
+  margin: 5em ;
+  border-radius:13px;
+  border: 1px solid #ccc;
+  background: whitesmoke;
+  float: left;
+  margin-left: 33%;
+  box-shadow: 0 0 14px rgba(33,33,33,.2); 
+}
+.box-0:hover {
+  box-shadow: 0 0 14px #008c76ff;  
+}
+
+.clients2 p {
+  font-size: 20px;
+  margin-top:1%;
+  padding: 2% 20%;
+  text-align: center
+}
+
+#social a{
+  text-decoration: none;
+  color: #3a3a3a;
+  font-weight: bold;
+}
+
+#social a:hover {
+  text-decoration: underline;
+  text-decoration-color: #40514e;
+  color: seagreen;
+}
+
+
+
+/* Displaying design for width of max 1270px
+   
+  This is the size of the monitor screen
+
+*/
+
+@media screen and (max-width: 1270px) {
+  blockquote {
+    left: 10%;
+    transform: translate(10%);
+  }
+  .col {
+    width: 100%;
+  }
+  #image1 img{
+    top: 10%;
+    transform: translate(0, 10%);
+  }
+
+}
+
+/* Displaying design for width of max 960px
+
+   This is the size of and ipad
+*/
+
+@media screen and(max-width: 960px){
+  #header-banner {
+    background-image: linear-gradient(to bottom right, #40514e, #30e3ca);
+    background-size: cover;
+    width: 76%;
+    height: 300px;
+    float: right;
+  }
+}
+
+/* Displaying design for width of max 640px
+
+  This is the closer to mobile screen
+*/
+
+@media (max-width:640px) {
+  #header-banner {
+    width: 100%;
+  }
+
+  .box-12, .box-2, .box-3, .box-4, .box-5, .box-6, .box-7, .box-0 {
+    margin-left: 15%;
+  }
+   /*  Hamburger created depending on the pixel size of the screen*/
+  .hamburger {
+   display: block;
+   position: fixed;
+   left: 0px;
+   top: 0px;
+   z-index: 2000;
+ }
+ .hamburger label {
+   display: block;
+   width: 50px;
+   height: 50px;
+   padding: 13px;
+   z-index: 1000;
+   cursor: pointer;
+ }
+ .hamburger span {
+   display: block;
+   width: 25px;
+   height: 10px;
+   border-top: 2px solid #eee;
+   z-index: 1000;
+ }
+ ul {
+   position: relative;
+   display: inline-block;
+   width: 100%;
+   background-color: #333;
+   height: 0px;
+   transition: all 0.3s ease-in;
+   overflow-y: hidden;
+   top: 50px;
+   left: 0px;
+   opacity: 0.5;
+ }
+ li a {
+   display: block;
+   width: 100%;
+   color: black;
+ }
+ li a:hover {
+   color: black;
+ }
+ #hamburg_check:not(:checked) ~ ul {
+   height: 0px;
+ }
+ #hamburg_check:checked ~ ul {
+   height: auto;
+   overflow-y: auto;
+ }
+ .mn-container {
+   margin-left: 0;
+ }
+}
+
+/* Displaying design for width of max 480px
+
+  This is the design of mobile
+*/
+@media screen and (max-width: 480px) {
+  .hamburger {
+    display: block;
+    width: 30px;
+    height: 70px;
+  }
+
+  ul {
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .box-12, .box-2, .box-3, .box-4, .box-5, .box-6, .box-7, .box-0 {
+    margin-left: 15%;
+  }
+}
