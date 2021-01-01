@@ -1,0 +1,69 @@
+-- Q: retrieve name, surname and gender from people that are from 'Essex'
+select name, surname, gender from people where location = "Essex";
+
+-- Q: Retrieve the name and surname from all women ('F') from 'Essex'
+select name, surname from people where location = "Essex" and gender = "F";
+
+
+-- Q: Retrive the name and surname from all women ('F') between 25 and 35 years old
+select name, surname from people where gender = "F" and age<="35" and age >="25";
+
+-- Q: Retrive the max age of women ('M'). Provide just the value of max age.
+select MAX(age) from people where gender = "F";
+
+the Value of max age is 34
+
+-- Q: Retrive the different of age between the max age and min age of people living in Hertfordshire. 
+-- Provide just the value of the difference.
+select max(age) - min(age) As "the difference in peoples age living in Hertfordshire" from people where location = "Hertfordshire";
+
+the answer of difference is 14 
+-- Q: Count the number of people in each location. Provide the name of the location and respective count.
+select location,COUNT(*) AS "number of people" from people group by location ;
+
+
+-- Q: Retrive the name, surname of people that are not in London
+select name, surname from people where location != "London";
+
+-- Q: Retrive both averages of the age of people that is located in Essex and Kent using the same query. Provide both averages (location name not needed).
+select location,avg(age) AS "Average of people" from people where location = "Kent" or location = "Essex" group by location;
+
+-- Q: Retrive the surnames of people which surname ends in "son"
+select surname from people where surname LIKE "%son" ;
+
+-- Q: Retrive the names and surname of men who likes women in ascending alphabetic order by their surnanme 
+select name, surname from people where gender = "M" and likes = "Women" order by surname ASC; 
+ 
+-- Q: Add a new person into the database called 'Abigail Hillforest' who lives in London, 
+-- is a woman ('F'), age 22 and her likes are unknown (NULL).
+insert into people values (26,'Abigail','Hillforest','London','F',NULL,22);
+
+-- Q: Insert the interest 'Jazz music' for 'Abigail Hillforest', don't input the values of the ids straight,
+-- intead you can find them automatically by using the proper select queries in each value entry
+ insert into people_interests select personid,interestid from people,interests  where name = "Abigail" and surname = "Hillforest" and interestname = "Jazz music";
+
+-- Q: Udpate the location of 'Houston Harn' to 'Essex'
+update people set location = 'Essex' where personid = 4;
+
+-- Q: Retrieve the location that has more than 6 people registered in it. Provide the name of the location and its count.
+select location , count(*) As "people registered" from people group by location having count(*)>6;
+
+-- Q: Retrieve the interests that have a larger amount of people interests than two. Provide the interest name and its count.
+
+
+-- Q: retrieve the IDs from people that are looking for 'Friendship'.
+
+
+-- Q: Count the number of people who is looking for 'Friendship'
+
+
+-- Q: Retrieve the names and surnames from people who are looking for friendship
+
+
+-- Q: Return the names of all interests and the number of people who is interested in it. 
+
+
+-- Q: Return the IDs of a pair of persons and the count of the common interests
+
+
+-- Q: Return now the pairs of persons from the query above but with their respective names and surnames

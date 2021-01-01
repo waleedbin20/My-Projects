@@ -1,0 +1,121 @@
+DROP DATABASE IF EXISTS DATING;
+CREATE DATABASE DATING;
+USE DATING;
+
+--
+-- Table `interests`
+--
+
+DROP TABLE IF EXISTS `interests`;
+CREATE TABLE `interests` (
+  `interestid` int(11) NOT NULL AUTO_INCREMENT,
+  `interestname` varchar(100) NOT NULL,
+  PRIMARY KEY (`interestid`)
+) ;
+
+
+--
+-- Data for table `interests`
+--
+
+LOCK TABLES `interests` WRITE;
+/*!40000 ALTER TABLE `interests` DISABLE KEYS */;
+INSERT INTO `interests` VALUES (1,'Rock music'),(5,'Pop music'),(6,'Latin music'),(7,'Techno music'),(8,'Jazz music'),(9,'Dance music'),(10,'Dogs'),(11,'Cats'),(12,'Horses'),(13,'Fitness'),(14,'Travel'),(15,'Singing'),(16,'Writing'),(17,'Dancing'),(18,'Politics'),(19,'Environmentalism'),(20,'Databases'),(21,'Programming'),(22,'Video games'),(23,'Casino games'),(24,'Board games'),(25,'Gardening'),(26,'Do it yourself'),(27,'Cars'),(28,'Motorbikes'),(29,'Yoga'),(30,'Running'),(31,'Bodybuilding'),(32,'Swimming'),(33,'Football'),(34,'Tennis'),(35,'Cycling');
+/*!40000 ALTER TABLE `interests` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table `lookingfor`
+--
+
+DROP TABLE IF EXISTS `lookingfor`;
+CREATE TABLE `lookingfor` (
+  `lookingforid` int(11) NOT NULL AUTO_INCREMENT,
+  `lookingforname` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  PRIMARY KEY (`lookingforid`)
+) ;
+
+--
+-- Data for table `lookingfor`
+--
+
+LOCK TABLES `lookingfor` WRITE;
+/*!40000 ALTER TABLE `lookingfor` DISABLE KEYS */;
+INSERT INTO `lookingfor` VALUES (1,'Friendship'),(2,'Romance'),(3,'Love');
+/*!40000 ALTER TABLE `lookingfor` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table `people`
+--
+
+DROP TABLE IF EXISTS `people`;
+CREATE TABLE `people` (
+  `personid` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) DEFAULT NULL,
+  `surname` varchar(100) DEFAULT NULL,
+  `location` enum('Essex','London','Kent','Hertfordshire') CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `gender` enum('M','F') DEFAULT NULL,
+  `likes` enum('Women','Men','Both') DEFAULT NULL,
+  `age` int(11) DEFAULT NULL,
+  PRIMARY KEY (`personid`)
+) ;
+
+--
+-- Data for table `people`
+--
+
+LOCK TABLES `people` WRITE;
+/*!40000 ALTER TABLE `people` DISABLE KEYS */;
+INSERT INTO `people` VALUES (1,'Richard','Furlong','London','M','Women',25),(2,'Jimmy','Page','Hertfordshire','M','Women',21),(3,'Luca','Tony','Kent','M','Women',22),(4,'Houston','Harn','London','M','Women',26),(5,'Timika','Tripodi ','Kent','F','Men',33),(6,'Dirk ','Sylvestre','Hertfordshire','M','Women',27),(7,'Erika','Everitt','Essex','F','Men',34),(8,'Kellie','Kesner','Kent','F','Men',28),(9,'Stanley','Mendelson','London','M','Men',21),(10,'Rohit','Reynolds','Hertfordshire','M','Women',35),(11,'Zahara','Pineda','Kent','F','Men',27),(12,'Amelie','Galvan','London','F','Women',21),(13,'Noor','Jensen','Essex','F','Men',23),(14,'Roxy','Buckner','London','F','Both',24),(15,'Tudor ','Fernsby','Kent','M','Men',30),(16,'Freddie','Maldonado','Essex','M','Men',21),(17,'Amir','O\'Ryan','Kent','M','Women',32),(18,'Tymoteusz','Jacobson','Hertfordshire','M','Women',26),(19,'Rohit','Kelley','London','M','Women',33),(20,'Stanislaw','Tran','London','M','Women',34),(21,'Conrad','Rodriguez','Essex','M','Women',25),(22,'Ruqayyah','Strong','Hertfordshire','F','Men',26),(23,'Layla','Beltran','Hertfordshire','F','Men',31),(24,'Mared','Johns','Essex','F','Men',32),(25,'Ruby ','Lister','Essex','F','Men',27);
+/*!40000 ALTER TABLE `people` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table `people_interests`
+--
+
+DROP TABLE IF EXISTS `people_interests`;
+CREATE TABLE `people_interests` (
+  `personid` int(11) NOT NULL,
+  `interestid` int(11) DEFAULT NULL,
+  UNIQUE KEY `people_interests_un` (`personid`,`interestid`),
+  KEY `people_interests_interests_fk` (`interestid`),
+  CONSTRAINT `people_interests_interests_fk` FOREIGN KEY (`interestid`) REFERENCES `interests` (`interestid`),
+  CONSTRAINT `people_interests_people_fk` FOREIGN KEY (`personid`) REFERENCES `people` (`personid`)
+) ;
+
+--
+-- Data for table `people_interests`
+--
+
+LOCK TABLES `people_interests` WRITE;
+/*!40000 ALTER TABLE `people_interests` DISABLE KEYS */;
+INSERT INTO `people_interests` VALUES (1,10),(1,24),(1,25),(1,26),(1,32),(2,1),(2,29),(2,31),(3,6),(3,8),(3,10),(3,22),(3,27),(4,5),(4,8),(4,11),(4,18),(5,7),(5,16),(5,35),(6,24),(6,29),(7,21),(7,28),(7,32),(7,34),(8,5),(8,6),(8,23),(8,25),(8,27),(8,29),(8,34),(9,5),(9,13),(9,31),(10,7),(10,9),(10,11),(10,13),(10,22),(11,6),(11,9),(11,17),(11,22),(11,24),(11,35),(13,1),(13,12),(13,14),(13,15),(13,17),(13,19),(13,21),(13,22),(13,23),(13,32),(14,5),(14,16),(14,17),(14,24),(14,25),(14,30),(15,13),(15,20),(15,23),(15,31),(16,10),(16,12),(16,13),(16,17),(16,31),(16,32),(17,5),(17,7),(18,21),(18,27),(19,1),(19,12),(19,18),(19,26),(20,10),(20,15),(20,26),(20,27),(20,30),(21,17),(21,30),(22,8),(22,35),(23,5),(23,15),(23,34),(24,5),(24,6),(24,9),(24,11),(24,12),(24,21),(25,34);
+/*!40000 ALTER TABLE `people_interests` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table `people_lookingfor`
+--
+
+DROP TABLE IF EXISTS `people_lookingfor`;
+CREATE TABLE `people_lookingfor` (
+  `personid` int(11) DEFAULT NULL,
+  `lookingforid` int(11) DEFAULT NULL,
+  UNIQUE KEY `people_lookingfor_un` (`personid`,`lookingforid`),
+  KEY `people_lookingfor_lookingfor_fk` (`lookingforid`),
+  CONSTRAINT `people_lookingfor_lookingfor_fk` FOREIGN KEY (`lookingforid`) REFERENCES `lookingfor` (`lookingforid`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `people_lookingfor_people_fk` FOREIGN KEY (`personid`) REFERENCES `people` (`personid`) ON DELETE CASCADE ON UPDATE CASCADE
+) ;
+
+--
+-- Data for table `people_lookingfor`
+--
+
+LOCK TABLES `people_lookingfor` WRITE;
+/*!40000 ALTER TABLE `people_lookingfor` DISABLE KEYS */;
+INSERT INTO `people_lookingfor` VALUES (1,2),(4,1),(4,2),(5,2),(5,3),(7,1),(7,3),(9,2),(9,3),(10,1),(11,2),(13,3),(14,1),(14,2),(14,3),(15,1),(15,2),(15,3),(16,2),(17,3),(18,3),(19,1),(19,3),(20,2),(20,3),(22,3),(23,1),(24,1),(24,3),(25,3);
+/*!40000 ALTER TABLE `people_lookingfor` ENABLE KEYS */;
+UNLOCK TABLES;
+
