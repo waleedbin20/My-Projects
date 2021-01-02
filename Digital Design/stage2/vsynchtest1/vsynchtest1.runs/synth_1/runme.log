@@ -1,0 +1,1596 @@
+
+*** Running vivado
+    with args -log vsynchtest.vds -m64 -mode batch -messageDb vivado.pb -notrace -source vsynchtest.tcl
+
+
+****** Vivado v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source vsynchtest.tcl -notrace
+Command: synth_design -top vsynchtest -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13888 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 286.945 ; gain = 79.621
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'vsynchtest' [M:/CE 264/stage2/vga/vsynchtest.vhd:34]
+INFO: [Synth 8-3491] module 'AUTO_IBUF' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:193' bound to instance 'CLK_AUTOBUF' of component 'AUTO_IBUF' [M:/CE 264/stage2/vga/vsynchtest.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'AUTO_IBUF' [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:199]
+INFO: [Synth 8-256] done synthesizing module 'AUTO_IBUF' (1#1) [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:199]
+INFO: [Synth 8-3491] module 'AUTO_OBUF' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:211' bound to instance 'JB0_AUTOBUF' of component 'AUTO_OBUF' [M:/CE 264/stage2/vga/vsynchtest.vhd:185]
+INFO: [Synth 8-638] synthesizing module 'AUTO_OBUF' [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:217]
+INFO: [Synth 8-256] done synthesizing module 'AUTO_OBUF' (2#1) [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:217]
+INFO: [Synth 8-3491] module 'AUTO_OBUF' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:211' bound to instance 'JB1_AUTOBUF' of component 'AUTO_OBUF' [M:/CE 264/stage2/vga/vsynchtest.vhd:187]
+INFO: [Synth 8-3491] module 'AUTO_OBUF' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:211' bound to instance 'JB2_AUTOBUF' of component 'AUTO_OBUF' [M:/CE 264/stage2/vga/vsynchtest.vhd:189]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:380' bound to instance 'U14' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:191]
+INFO: [Synth 8-638] synthesizing module 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:387]
+INFO: [Synth 8-256] done synthesizing module 'INV_NI' (3#1) [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:387]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:380' bound to instance 'U15' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:193]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:380' bound to instance 'U19' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:195]
+INFO: [Synth 8-3491] module 'AND4_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:172' bound to instance 'U20' of component 'AND4_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:197]
+INFO: [Synth 8-638] synthesizing module 'AND4_NI' [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:182]
+INFO: [Synth 8-256] done synthesizing module 'AND4_NI' (4#1) [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:182]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:380' bound to instance 'U21' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:199]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:380' bound to instance 'U22' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:201]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:380' bound to instance 'U23' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:203]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:380' bound to instance 'U24' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:205]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:380' bound to instance 'U25' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:207]
+INFO: [Synth 8-3491] module 'AND4_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:172' bound to instance 'U26' of component 'AND4_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:209]
+INFO: [Synth 8-3491] module 'AND2_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:133' bound to instance 'U27' of component 'AND2_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:211]
+INFO: [Synth 8-638] synthesizing module 'AND2_NI' [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:141]
+INFO: [Synth 8-256] done synthesizing module 'AND2_NI' (5#1) [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:141]
+INFO: [Synth 8-3491] module 'AND3_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:152' bound to instance 'U28' of component 'AND3_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:213]
+INFO: [Synth 8-638] synthesizing module 'AND3_NI' [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:161]
+INFO: [Synth 8-256] done synthesizing module 'AND3_NI' (6#1) [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:161]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:380' bound to instance 'U29' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:215]
+INFO: [Synth 8-3491] module 'AND2_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:133' bound to instance 'U30' of component 'AND2_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:217]
+INFO: [Synth 8-3491] module 'AND2_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:133' bound to instance 'U31' of component 'AND2_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:219]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:380' bound to instance 'U32' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:221]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:380' bound to instance 'U33' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:223]
+INFO: [Synth 8-3491] module 'CNTR_4BIN_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:230' bound to instance 'U16' of component 'CNTR_4BIN_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:225]
+INFO: [Synth 8-638] synthesizing module 'CNTR_4BIN_S_NI' [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:249]
+INFO: [Synth 8-256] done synthesizing module 'CNTR_4BIN_S_NI' (7#1) [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:249]
+INFO: [Synth 8-3491] module 'CNTR_4BIN_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:230' bound to instance 'U17' of component 'CNTR_4BIN_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:227]
+INFO: [Synth 8-3491] module 'CNTR_4BIN_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:230' bound to instance 'U18' of component 'CNTR_4BIN_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:229]
+INFO: [Synth 8-3491] module 'DIGITAL_HIGH_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:329' bound to instance 'U1' of component 'DIGITAL_HIGH_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:231]
+INFO: [Synth 8-638] synthesizing module 'DIGITAL_HIGH_NI' [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:335]
+INFO: [Synth 8-256] done synthesizing module 'DIGITAL_HIGH_NI' (8#1) [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:335]
+INFO: [Synth 8-3491] module 'DIGITAL_HIGH_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:329' bound to instance 'U2' of component 'DIGITAL_HIGH_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:233]
+INFO: [Synth 8-3491] module 'CNTR_4BIN_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:230' bound to instance 'U13' of component 'CNTR_4BIN_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:235]
+INFO: [Synth 8-3491] module 'CNTR_BCD_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:275' bound to instance 'U3' of component 'CNTR_BCD_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:237]
+INFO: [Synth 8-638] synthesizing module 'CNTR_BCD_S_NI' [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:294]
+INFO: [Synth 8-256] done synthesizing module 'CNTR_BCD_S_NI' (9#1) [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:294]
+INFO: [Synth 8-3491] module 'FF_T_CLR_CO_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:345' bound to instance 'U4' of component 'FF_T_CLR_CO_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:239]
+INFO: [Synth 8-638] synthesizing module 'FF_T_CLR_CO_NI' [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:355]
+INFO: [Synth 8-256] done synthesizing module 'FF_T_CLR_CO_NI' (10#1) [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:355]
+INFO: [Synth 8-3491] module 'CNTR_BCD_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:275' bound to instance 'U5' of component 'CNTR_BCD_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:241]
+INFO: [Synth 8-3491] module 'CNTR_BCD_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:275' bound to instance 'U6' of component 'CNTR_BCD_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:243]
+INFO: [Synth 8-3491] module 'CNTR_BCD_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:275' bound to instance 'U7' of component 'CNTR_BCD_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:245]
+INFO: [Synth 8-3491] module 'CNTR_BCD_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:275' bound to instance 'U8' of component 'CNTR_BCD_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:247]
+INFO: [Synth 8-3491] module 'CNTR_BCD_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:275' bound to instance 'U9' of component 'CNTR_BCD_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:249]
+INFO: [Synth 8-3491] module 'CNTR_BCD_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:275' bound to instance 'U10' of component 'CNTR_BCD_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:251]
+INFO: [Synth 8-3491] module 'CNTR_BCD_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:275' bound to instance 'U11' of component 'CNTR_BCD_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:253]
+INFO: [Synth 8-3491] module 'FF_T_CLR_CO_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:345' bound to instance 'U12' of component 'FF_T_CLR_CO_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:255]
+INFO: [Synth 8-256] done synthesizing module 'vsynchtest' (11#1) [M:/CE 264/stage2/vga/vsynchtest.vhd:34]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 324.379 ; gain = 117.055
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 324.379 ; gain = 117.055
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [M:/CE 264/stage2/vsynchtest1/Basys3_Master.xdc]
+Finished Parsing XDC File [M:/CE 264/stage2/vsynchtest1/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [M:/CE 264/stage2/vsynchtest1/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vsynchtest_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/vsynchtest_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 611.637 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 611.637 ; gain = 404.313
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 611.637 ; gain = 404.313
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 611.637 ; gain = 404.313
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 611.637 ; gain = 404.313
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'U14' (INV_NI) to 'U29'
+INFO: [Synth 8-223] decloning instance 'U1' (DIGITAL_HIGH_NI) to 'U2'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 12    
++---Registers : 
+	                4 Bit    Registers := 12    
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 28    
+	   2 Input      1 Bit        Muxes := 20    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module CNTR_4BIN_S_NI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module CNTR_BCD_S_NI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+Module FF_T_CLR_CO_NI 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 611.637 ; gain = 404.313
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 611.637 ; gain = 404.313
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 611.637 ; gain = 404.313
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (U13/Q_reg[3]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U13/Q_reg[2]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U18/Q_reg[3]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U18/Q_reg[2]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U3/Q_reg[3]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U3/Q_reg[2]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U3/Q_reg[1]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U3/Q_reg[0]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U3/RCO_reg) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U5/Q_reg[3]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U5/Q_reg[2]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U5/Q_reg[1]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U5/Q_reg[0]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U5/RCO_reg) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U6/Q_reg[3]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U6/Q_reg[2]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U6/Q_reg[1]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U6/Q_reg[0]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U6/RCO_reg) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U7/Q_reg[3]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U7/Q_reg[2]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U7/Q_reg[1]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U7/Q_reg[0]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U7/RCO_reg) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U8/Q_reg[3]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U8/Q_reg[2]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U8/Q_reg[1]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U8/Q_reg[0]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U8/RCO_reg) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U9/Q_reg[3]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U9/Q_reg[2]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U9/Q_reg[1]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U9/Q_reg[0]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U9/RCO_reg) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U10/Q_reg[3]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U10/Q_reg[2]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U10/Q_reg[1]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U10/Q_reg[0]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U10/RCO_reg) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U11/Q_reg[3]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U11/Q_reg[2]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U11/Q_reg[1]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U11/Q_reg[0]) is unused and will be removed from module vsynchtest.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 611.637 ; gain = 404.313
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 611.637 ; gain = 404.313
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 611.637 ; gain = 404.313
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 611.637 ; gain = 404.313
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 611.637 ; gain = 404.313
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 611.637 ; gain = 404.313
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 611.637 ; gain = 404.313
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 611.637 ; gain = 404.313
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 611.637 ; gain = 404.313
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 611.637 ; gain = 404.313
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 611.637 ; gain = 404.313
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 611.637 ; gain = 404.313
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 611.637 ; gain = 404.313
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     3|
+|3     |LUT2 |     4|
+|4     |LUT3 |     4|
+|5     |LUT4 |     3|
+|6     |LUT5 |     3|
+|7     |LUT6 |     2|
+|8     |FDRE |    12|
+|9     |IBUF |     1|
+|10    |OBUF |     3|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-----------------+------+
+|      |Instance |Module           |Cells |
++------+---------+-----------------+------+
+|1     |top      |                 |    36|
+|2     |  U13    |CNTR_4BIN_S_NI   |     4|
+|3     |  U16    |CNTR_4BIN_S_NI_0 |    12|
+|4     |  U17    |CNTR_4BIN_S_NI_1 |    11|
+|5     |  U18    |CNTR_4BIN_S_NI_2 |     4|
++------+---------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 611.637 ; gain = 404.313
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 43 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 611.637 ; gain = 115.199
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 611.637 ; gain = 404.313
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+73 Infos, 43 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 611.637 ; gain = 403.879
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 611.637 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 28 13:59:37 2019...
+
+*** Running vivado
+    with args -log vsynchtest.vds -m64 -mode batch -messageDb vivado.pb -notrace -source vsynchtest.tcl
+
+
+****** Vivado v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source vsynchtest.tcl -notrace
+Command: synth_design -top vsynchtest -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1856 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 286.906 ; gain = 79.508
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'vsynchtest' [M:/CE 264/stage2/vga/vsynchtest.vhd:34]
+INFO: [Synth 8-3491] module 'AUTO_IBUF' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:193' bound to instance 'CLK_AUTOBUF' of component 'AUTO_IBUF' [M:/CE 264/stage2/vga/vsynchtest.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'AUTO_IBUF' [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:199]
+INFO: [Synth 8-256] done synthesizing module 'AUTO_IBUF' (1#1) [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:199]
+INFO: [Synth 8-3491] module 'AUTO_OBUF' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:211' bound to instance 'JB0_AUTOBUF' of component 'AUTO_OBUF' [M:/CE 264/stage2/vga/vsynchtest.vhd:185]
+INFO: [Synth 8-638] synthesizing module 'AUTO_OBUF' [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:217]
+INFO: [Synth 8-256] done synthesizing module 'AUTO_OBUF' (2#1) [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:217]
+INFO: [Synth 8-3491] module 'AUTO_OBUF' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:211' bound to instance 'JB1_AUTOBUF' of component 'AUTO_OBUF' [M:/CE 264/stage2/vga/vsynchtest.vhd:187]
+INFO: [Synth 8-3491] module 'AUTO_OBUF' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:211' bound to instance 'JB2_AUTOBUF' of component 'AUTO_OBUF' [M:/CE 264/stage2/vga/vsynchtest.vhd:189]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:380' bound to instance 'U14' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:191]
+INFO: [Synth 8-638] synthesizing module 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:387]
+INFO: [Synth 8-256] done synthesizing module 'INV_NI' (3#1) [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:387]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:380' bound to instance 'U15' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:193]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:380' bound to instance 'U19' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:195]
+INFO: [Synth 8-3491] module 'AND4_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:172' bound to instance 'U20' of component 'AND4_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:197]
+INFO: [Synth 8-638] synthesizing module 'AND4_NI' [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:182]
+INFO: [Synth 8-256] done synthesizing module 'AND4_NI' (4#1) [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:182]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:380' bound to instance 'U21' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:199]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:380' bound to instance 'U22' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:201]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:380' bound to instance 'U23' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:203]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:380' bound to instance 'U24' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:205]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:380' bound to instance 'U25' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:207]
+INFO: [Synth 8-3491] module 'AND4_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:172' bound to instance 'U26' of component 'AND4_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:209]
+INFO: [Synth 8-3491] module 'AND2_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:133' bound to instance 'U27' of component 'AND2_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:211]
+INFO: [Synth 8-638] synthesizing module 'AND2_NI' [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:141]
+INFO: [Synth 8-256] done synthesizing module 'AND2_NI' (5#1) [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:141]
+INFO: [Synth 8-3491] module 'AND3_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:152' bound to instance 'U28' of component 'AND3_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:213]
+INFO: [Synth 8-638] synthesizing module 'AND3_NI' [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:161]
+INFO: [Synth 8-256] done synthesizing module 'AND3_NI' (6#1) [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:161]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:380' bound to instance 'U29' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:215]
+INFO: [Synth 8-3491] module 'AND2_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:133' bound to instance 'U30' of component 'AND2_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:217]
+INFO: [Synth 8-3491] module 'AND2_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:133' bound to instance 'U31' of component 'AND2_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:219]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:380' bound to instance 'U32' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:221]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:380' bound to instance 'U33' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:223]
+INFO: [Synth 8-3491] module 'CNTR_4BIN_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:230' bound to instance 'U16' of component 'CNTR_4BIN_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:225]
+INFO: [Synth 8-638] synthesizing module 'CNTR_4BIN_S_NI' [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:249]
+INFO: [Synth 8-256] done synthesizing module 'CNTR_4BIN_S_NI' (7#1) [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:249]
+INFO: [Synth 8-3491] module 'CNTR_4BIN_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:230' bound to instance 'U17' of component 'CNTR_4BIN_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:227]
+INFO: [Synth 8-3491] module 'CNTR_4BIN_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:230' bound to instance 'U18' of component 'CNTR_4BIN_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:229]
+INFO: [Synth 8-3491] module 'DIGITAL_HIGH_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:329' bound to instance 'U1' of component 'DIGITAL_HIGH_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:231]
+INFO: [Synth 8-638] synthesizing module 'DIGITAL_HIGH_NI' [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:335]
+INFO: [Synth 8-256] done synthesizing module 'DIGITAL_HIGH_NI' (8#1) [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:335]
+INFO: [Synth 8-3491] module 'DIGITAL_HIGH_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:329' bound to instance 'U2' of component 'DIGITAL_HIGH_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:233]
+INFO: [Synth 8-3491] module 'CNTR_4BIN_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:230' bound to instance 'U13' of component 'CNTR_4BIN_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:235]
+INFO: [Synth 8-3491] module 'CNTR_BCD_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:275' bound to instance 'U3' of component 'CNTR_BCD_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:237]
+INFO: [Synth 8-638] synthesizing module 'CNTR_BCD_S_NI' [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:294]
+INFO: [Synth 8-256] done synthesizing module 'CNTR_BCD_S_NI' (9#1) [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:294]
+INFO: [Synth 8-3491] module 'FF_T_CLR_CO_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:345' bound to instance 'U4' of component 'FF_T_CLR_CO_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:239]
+INFO: [Synth 8-638] synthesizing module 'FF_T_CLR_CO_NI' [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:355]
+INFO: [Synth 8-256] done synthesizing module 'FF_T_CLR_CO_NI' (10#1) [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:355]
+INFO: [Synth 8-3491] module 'CNTR_BCD_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:275' bound to instance 'U5' of component 'CNTR_BCD_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:241]
+INFO: [Synth 8-3491] module 'CNTR_BCD_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:275' bound to instance 'U6' of component 'CNTR_BCD_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:243]
+INFO: [Synth 8-3491] module 'CNTR_BCD_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:275' bound to instance 'U7' of component 'CNTR_BCD_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:245]
+INFO: [Synth 8-3491] module 'CNTR_BCD_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:275' bound to instance 'U8' of component 'CNTR_BCD_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:247]
+INFO: [Synth 8-3491] module 'CNTR_BCD_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:275' bound to instance 'U9' of component 'CNTR_BCD_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:249]
+INFO: [Synth 8-3491] module 'CNTR_BCD_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:275' bound to instance 'U10' of component 'CNTR_BCD_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:251]
+INFO: [Synth 8-3491] module 'CNTR_BCD_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:275' bound to instance 'U11' of component 'CNTR_BCD_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:253]
+INFO: [Synth 8-3491] module 'FF_T_CLR_CO_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:345' bound to instance 'U12' of component 'FF_T_CLR_CO_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:255]
+INFO: [Synth 8-256] done synthesizing module 'vsynchtest' (11#1) [M:/CE 264/stage2/vga/vsynchtest.vhd:34]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 324.340 ; gain = 116.941
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 324.340 ; gain = 116.941
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [M:/CE 264/stage2/vsynchtest1/Basys3_Master.xdc]
+Finished Parsing XDC File [M:/CE 264/stage2/vsynchtest1/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [M:/CE 264/stage2/vsynchtest1/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vsynchtest_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/vsynchtest_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 611.668 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 611.668 ; gain = 404.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 611.668 ; gain = 404.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 611.668 ; gain = 404.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 611.668 ; gain = 404.270
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'U14' (INV_NI) to 'U29'
+INFO: [Synth 8-223] decloning instance 'U1' (DIGITAL_HIGH_NI) to 'U2'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 12    
++---Registers : 
+	                4 Bit    Registers := 12    
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 28    
+	   2 Input      1 Bit        Muxes := 20    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module CNTR_4BIN_S_NI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module CNTR_BCD_S_NI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+Module FF_T_CLR_CO_NI 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 611.668 ; gain = 404.270
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 611.668 ; gain = 404.270
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 611.668 ; gain = 404.270
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (U13/Q_reg[3]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U13/Q_reg[2]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U18/Q_reg[3]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U18/Q_reg[2]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U3/Q_reg[3]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U3/Q_reg[2]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U3/Q_reg[1]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U3/Q_reg[0]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U3/RCO_reg) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U5/Q_reg[3]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U5/Q_reg[2]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U5/Q_reg[1]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U5/Q_reg[0]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U5/RCO_reg) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U6/Q_reg[3]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U6/Q_reg[2]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U6/Q_reg[1]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U6/Q_reg[0]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U6/RCO_reg) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U7/Q_reg[3]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U7/Q_reg[2]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U7/Q_reg[1]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U7/Q_reg[0]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U7/RCO_reg) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U8/Q_reg[3]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U8/Q_reg[2]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U8/Q_reg[1]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U8/Q_reg[0]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U8/RCO_reg) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U9/Q_reg[3]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U9/Q_reg[2]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U9/Q_reg[1]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U9/Q_reg[0]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U9/RCO_reg) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U10/Q_reg[3]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U10/Q_reg[2]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U10/Q_reg[1]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U10/Q_reg[0]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U10/RCO_reg) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U11/Q_reg[3]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U11/Q_reg[2]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U11/Q_reg[1]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U11/Q_reg[0]) is unused and will be removed from module vsynchtest.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 611.668 ; gain = 404.270
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 611.668 ; gain = 404.270
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 611.668 ; gain = 404.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 611.668 ; gain = 404.270
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 611.668 ; gain = 404.270
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 611.668 ; gain = 404.270
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 611.668 ; gain = 404.270
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 611.668 ; gain = 404.270
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 611.668 ; gain = 404.270
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 611.668 ; gain = 404.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 611.668 ; gain = 404.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 611.668 ; gain = 404.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 611.668 ; gain = 404.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     3|
+|3     |LUT2 |     4|
+|4     |LUT3 |     4|
+|5     |LUT4 |     3|
+|6     |LUT5 |     3|
+|7     |LUT6 |     2|
+|8     |FDRE |    12|
+|9     |IBUF |     1|
+|10    |OBUF |     3|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-----------------+------+
+|      |Instance |Module           |Cells |
++------+---------+-----------------+------+
+|1     |top      |                 |    36|
+|2     |  U13    |CNTR_4BIN_S_NI   |     4|
+|3     |  U16    |CNTR_4BIN_S_NI_0 |    12|
+|4     |  U17    |CNTR_4BIN_S_NI_1 |    11|
+|5     |  U18    |CNTR_4BIN_S_NI_2 |     4|
++------+---------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 611.668 ; gain = 404.270
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 43 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 611.668 ; gain = 114.355
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 611.668 ; gain = 404.270
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+73 Infos, 43 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 611.668 ; gain = 404.270
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 611.668 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 28 14:01:36 2019...
+
+*** Running vivado
+    with args -log vsynchtest.vds -m64 -mode batch -messageDb vivado.pb -notrace -source vsynchtest.tcl
+
+
+****** Vivado v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source vsynchtest.tcl -notrace
+Command: synth_design -top vsynchtest -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9512 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 286.102 ; gain = 79.645
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'vsynchtest' [M:/CE 264/stage2/vga/vsynchtest.vhd:34]
+INFO: [Synth 8-3491] module 'AUTO_IBUF' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:193' bound to instance 'CLK_AUTOBUF' of component 'AUTO_IBUF' [M:/CE 264/stage2/vga/vsynchtest.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'AUTO_IBUF' [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:199]
+INFO: [Synth 8-256] done synthesizing module 'AUTO_IBUF' (1#1) [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:199]
+INFO: [Synth 8-3491] module 'AUTO_OBUF' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:211' bound to instance 'JB0_AUTOBUF' of component 'AUTO_OBUF' [M:/CE 264/stage2/vga/vsynchtest.vhd:185]
+INFO: [Synth 8-638] synthesizing module 'AUTO_OBUF' [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:217]
+INFO: [Synth 8-256] done synthesizing module 'AUTO_OBUF' (2#1) [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:217]
+INFO: [Synth 8-3491] module 'AUTO_OBUF' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:211' bound to instance 'JB1_AUTOBUF' of component 'AUTO_OBUF' [M:/CE 264/stage2/vga/vsynchtest.vhd:187]
+INFO: [Synth 8-3491] module 'AUTO_OBUF' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:211' bound to instance 'JB2_AUTOBUF' of component 'AUTO_OBUF' [M:/CE 264/stage2/vga/vsynchtest.vhd:189]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:380' bound to instance 'U14' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:191]
+INFO: [Synth 8-638] synthesizing module 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:387]
+INFO: [Synth 8-256] done synthesizing module 'INV_NI' (3#1) [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:387]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:380' bound to instance 'U15' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:193]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:380' bound to instance 'U19' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:195]
+INFO: [Synth 8-3491] module 'AND4_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:172' bound to instance 'U20' of component 'AND4_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:197]
+INFO: [Synth 8-638] synthesizing module 'AND4_NI' [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:182]
+INFO: [Synth 8-256] done synthesizing module 'AND4_NI' (4#1) [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:182]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:380' bound to instance 'U21' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:199]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:380' bound to instance 'U22' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:201]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:380' bound to instance 'U23' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:203]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:380' bound to instance 'U24' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:205]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:380' bound to instance 'U25' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:207]
+INFO: [Synth 8-3491] module 'AND4_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:172' bound to instance 'U26' of component 'AND4_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:209]
+INFO: [Synth 8-3491] module 'AND2_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:133' bound to instance 'U27' of component 'AND2_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:211]
+INFO: [Synth 8-638] synthesizing module 'AND2_NI' [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:141]
+INFO: [Synth 8-256] done synthesizing module 'AND2_NI' (5#1) [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:141]
+INFO: [Synth 8-3491] module 'AND3_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:152' bound to instance 'U28' of component 'AND3_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:213]
+INFO: [Synth 8-638] synthesizing module 'AND3_NI' [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:161]
+INFO: [Synth 8-256] done synthesizing module 'AND3_NI' (6#1) [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:161]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:380' bound to instance 'U29' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:215]
+INFO: [Synth 8-3491] module 'AND2_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:133' bound to instance 'U30' of component 'AND2_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:217]
+INFO: [Synth 8-3491] module 'AND2_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:133' bound to instance 'U31' of component 'AND2_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:219]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:380' bound to instance 'U32' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:221]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:380' bound to instance 'U33' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:223]
+INFO: [Synth 8-3491] module 'CNTR_4BIN_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:230' bound to instance 'U16' of component 'CNTR_4BIN_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:225]
+INFO: [Synth 8-638] synthesizing module 'CNTR_4BIN_S_NI' [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:249]
+INFO: [Synth 8-256] done synthesizing module 'CNTR_4BIN_S_NI' (7#1) [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:249]
+INFO: [Synth 8-3491] module 'CNTR_4BIN_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:230' bound to instance 'U17' of component 'CNTR_4BIN_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:227]
+INFO: [Synth 8-3491] module 'CNTR_4BIN_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:230' bound to instance 'U18' of component 'CNTR_4BIN_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:229]
+INFO: [Synth 8-3491] module 'DIGITAL_HIGH_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:329' bound to instance 'U1' of component 'DIGITAL_HIGH_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:231]
+INFO: [Synth 8-638] synthesizing module 'DIGITAL_HIGH_NI' [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:335]
+INFO: [Synth 8-256] done synthesizing module 'DIGITAL_HIGH_NI' (8#1) [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:335]
+INFO: [Synth 8-3491] module 'DIGITAL_HIGH_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:329' bound to instance 'U2' of component 'DIGITAL_HIGH_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:233]
+INFO: [Synth 8-3491] module 'CNTR_4BIN_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:230' bound to instance 'U13' of component 'CNTR_4BIN_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:235]
+INFO: [Synth 8-3491] module 'CNTR_BCD_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:275' bound to instance 'U3' of component 'CNTR_BCD_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:237]
+INFO: [Synth 8-638] synthesizing module 'CNTR_BCD_S_NI' [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:294]
+INFO: [Synth 8-256] done synthesizing module 'CNTR_BCD_S_NI' (9#1) [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:294]
+INFO: [Synth 8-3491] module 'FF_T_CLR_CO_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:345' bound to instance 'U4' of component 'FF_T_CLR_CO_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:239]
+INFO: [Synth 8-638] synthesizing module 'FF_T_CLR_CO_NI' [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:355]
+INFO: [Synth 8-256] done synthesizing module 'FF_T_CLR_CO_NI' (10#1) [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:355]
+INFO: [Synth 8-3491] module 'CNTR_BCD_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:275' bound to instance 'U5' of component 'CNTR_BCD_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:241]
+INFO: [Synth 8-3491] module 'CNTR_BCD_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:275' bound to instance 'U6' of component 'CNTR_BCD_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:243]
+INFO: [Synth 8-3491] module 'CNTR_BCD_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:275' bound to instance 'U7' of component 'CNTR_BCD_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:245]
+INFO: [Synth 8-3491] module 'CNTR_BCD_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:275' bound to instance 'U8' of component 'CNTR_BCD_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:247]
+INFO: [Synth 8-3491] module 'CNTR_BCD_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:275' bound to instance 'U9' of component 'CNTR_BCD_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:249]
+INFO: [Synth 8-3491] module 'CNTR_BCD_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:275' bound to instance 'U10' of component 'CNTR_BCD_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:251]
+INFO: [Synth 8-3491] module 'CNTR_BCD_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:275' bound to instance 'U11' of component 'CNTR_BCD_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:253]
+INFO: [Synth 8-3491] module 'FF_T_CLR_CO_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:345' bound to instance 'U12' of component 'FF_T_CLR_CO_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:255]
+INFO: [Synth 8-256] done synthesizing module 'vsynchtest' (11#1) [M:/CE 264/stage2/vga/vsynchtest.vhd:34]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 323.570 ; gain = 117.113
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 323.570 ; gain = 117.113
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [M:/CE 264/stage2/vsynchtest1/Basys3_Master.xdc]
+Finished Parsing XDC File [M:/CE 264/stage2/vsynchtest1/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [M:/CE 264/stage2/vsynchtest1/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vsynchtest_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/vsynchtest_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 611.824 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 611.824 ; gain = 405.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 611.824 ; gain = 405.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 611.824 ; gain = 405.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 611.824 ; gain = 405.367
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'U14' (INV_NI) to 'U29'
+INFO: [Synth 8-223] decloning instance 'U1' (DIGITAL_HIGH_NI) to 'U2'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 12    
++---Registers : 
+	                4 Bit    Registers := 12    
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 28    
+	   2 Input      1 Bit        Muxes := 20    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module CNTR_4BIN_S_NI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module CNTR_BCD_S_NI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+Module FF_T_CLR_CO_NI 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 611.824 ; gain = 405.367
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 611.824 ; gain = 405.367
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 611.824 ; gain = 405.367
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (U13/Q_reg[3]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U13/Q_reg[2]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U18/Q_reg[3]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U18/Q_reg[2]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U3/Q_reg[3]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U3/Q_reg[2]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U3/Q_reg[1]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U3/Q_reg[0]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U3/RCO_reg) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U5/Q_reg[3]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U5/Q_reg[2]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U5/Q_reg[1]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U5/Q_reg[0]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U5/RCO_reg) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U6/Q_reg[3]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U6/Q_reg[2]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U6/Q_reg[1]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U6/Q_reg[0]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U6/RCO_reg) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U7/Q_reg[3]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U7/Q_reg[2]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U7/Q_reg[1]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U7/Q_reg[0]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U7/RCO_reg) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U8/Q_reg[3]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U8/Q_reg[2]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U8/Q_reg[1]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U8/Q_reg[0]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U8/RCO_reg) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U9/Q_reg[3]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U9/Q_reg[2]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U9/Q_reg[1]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U9/Q_reg[0]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U9/RCO_reg) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U10/Q_reg[3]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U10/Q_reg[2]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U10/Q_reg[1]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U10/Q_reg[0]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U10/RCO_reg) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U11/Q_reg[3]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U11/Q_reg[2]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U11/Q_reg[1]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U11/Q_reg[0]) is unused and will be removed from module vsynchtest.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 611.824 ; gain = 405.367
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 611.824 ; gain = 405.367
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 611.824 ; gain = 405.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 611.824 ; gain = 405.367
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 611.824 ; gain = 405.367
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 611.824 ; gain = 405.367
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 611.824 ; gain = 405.367
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 611.824 ; gain = 405.367
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 611.824 ; gain = 405.367
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 611.824 ; gain = 405.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 611.824 ; gain = 405.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 611.824 ; gain = 405.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 611.824 ; gain = 405.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     3|
+|3     |LUT2 |     4|
+|4     |LUT3 |     4|
+|5     |LUT4 |     3|
+|6     |LUT5 |     3|
+|7     |LUT6 |     2|
+|8     |FDRE |    12|
+|9     |IBUF |     1|
+|10    |OBUF |     3|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-----------------+------+
+|      |Instance |Module           |Cells |
++------+---------+-----------------+------+
+|1     |top      |                 |    36|
+|2     |  U13    |CNTR_4BIN_S_NI   |     4|
+|3     |  U16    |CNTR_4BIN_S_NI_0 |    12|
+|4     |  U17    |CNTR_4BIN_S_NI_1 |    11|
+|5     |  U18    |CNTR_4BIN_S_NI_2 |     4|
++------+---------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 611.824 ; gain = 405.367
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 43 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 611.824 ; gain = 114.145
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 611.824 ; gain = 405.367
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+73 Infos, 43 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 611.824 ; gain = 404.441
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 611.824 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 28 14:03:12 2019...
+
+*** Running vivado
+    with args -log vsynchtest.vds -m64 -mode batch -messageDb vivado.pb -notrace -source vsynchtest.tcl
+
+
+****** Vivado v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source vsynchtest.tcl -notrace
+Command: synth_design -top vsynchtest -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13204 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 286.480 ; gain = 79.160
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'vsynchtest' [M:/CE 264/stage2/vga/vsynchtest.vhd:34]
+INFO: [Synth 8-3491] module 'AUTO_IBUF' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:176' bound to instance 'CLK_AUTOBUF' of component 'AUTO_IBUF' [M:/CE 264/stage2/vga/vsynchtest.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'AUTO_IBUF' [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:182]
+INFO: [Synth 8-256] done synthesizing module 'AUTO_IBUF' (1#1) [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:182]
+INFO: [Synth 8-3491] module 'AUTO_OBUF' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:194' bound to instance 'JB0_AUTOBUF' of component 'AUTO_OBUF' [M:/CE 264/stage2/vga/vsynchtest.vhd:185]
+INFO: [Synth 8-638] synthesizing module 'AUTO_OBUF' [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:200]
+INFO: [Synth 8-256] done synthesizing module 'AUTO_OBUF' (2#1) [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:200]
+INFO: [Synth 8-3491] module 'AUTO_OBUF' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:194' bound to instance 'JB1_AUTOBUF' of component 'AUTO_OBUF' [M:/CE 264/stage2/vga/vsynchtest.vhd:187]
+INFO: [Synth 8-3491] module 'AUTO_OBUF' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:194' bound to instance 'JB2_AUTOBUF' of component 'AUTO_OBUF' [M:/CE 264/stage2/vga/vsynchtest.vhd:189]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:318' bound to instance 'U14' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:191]
+INFO: [Synth 8-638] synthesizing module 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:325]
+INFO: [Synth 8-256] done synthesizing module 'INV_NI' (3#1) [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:325]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:318' bound to instance 'U15' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:193]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:318' bound to instance 'U19' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:195]
+INFO: [Synth 8-3491] module 'AND4_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:155' bound to instance 'U20' of component 'AND4_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:197]
+INFO: [Synth 8-638] synthesizing module 'AND4_NI' [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:165]
+INFO: [Synth 8-256] done synthesizing module 'AND4_NI' (4#1) [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:165]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:318' bound to instance 'U21' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:199]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:318' bound to instance 'U22' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:201]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:318' bound to instance 'U23' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:203]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:318' bound to instance 'U24' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:205]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:318' bound to instance 'U25' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:207]
+INFO: [Synth 8-3491] module 'AND4_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:155' bound to instance 'U26' of component 'AND4_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:209]
+INFO: [Synth 8-3491] module 'AND2_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:116' bound to instance 'U27' of component 'AND2_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:211]
+INFO: [Synth 8-638] synthesizing module 'AND2_NI' [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:124]
+INFO: [Synth 8-256] done synthesizing module 'AND2_NI' (5#1) [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:124]
+INFO: [Synth 8-3491] module 'AND3_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:135' bound to instance 'U28' of component 'AND3_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:213]
+INFO: [Synth 8-638] synthesizing module 'AND3_NI' [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:144]
+INFO: [Synth 8-256] done synthesizing module 'AND3_NI' (6#1) [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:144]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:318' bound to instance 'U29' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:215]
+INFO: [Synth 8-3491] module 'AND2_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:116' bound to instance 'U30' of component 'AND2_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:217]
+INFO: [Synth 8-3491] module 'AND2_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:116' bound to instance 'U31' of component 'AND2_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:219]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:318' bound to instance 'U32' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:221]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:318' bound to instance 'U33' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:223]
+INFO: [Synth 8-3491] module 'CNTR_4BIN_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:213' bound to instance 'U16' of component 'CNTR_4BIN_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:225]
+INFO: [Synth 8-638] synthesizing module 'CNTR_4BIN_S_NI' [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:232]
+INFO: [Synth 8-256] done synthesizing module 'CNTR_4BIN_S_NI' (7#1) [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:232]
+INFO: [Synth 8-3491] module 'CNTR_4BIN_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:213' bound to instance 'U17' of component 'CNTR_4BIN_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:227]
+INFO: [Synth 8-3491] module 'CNTR_4BIN_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:213' bound to instance 'U18' of component 'CNTR_4BIN_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:229]
+INFO: [Synth 8-3491] module 'DIGITAL_HIGH_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:257' bound to instance 'U1' of component 'DIGITAL_HIGH_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:231]
+INFO: [Synth 8-638] synthesizing module 'DIGITAL_HIGH_NI' [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:263]
+INFO: [Synth 8-256] done synthesizing module 'DIGITAL_HIGH_NI' (8#1) [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:263]
+INFO: [Synth 8-3491] module 'AND4_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:155' bound to instance 'U34' of component 'AND4_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:233]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:318' bound to instance 'U35' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:235]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:318' bound to instance 'U36' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:237]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:318' bound to instance 'U37' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:239]
+INFO: [Synth 8-3491] module 'AND4_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:155' bound to instance 'U38' of component 'AND4_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:241]
+INFO: [Synth 8-3491] module 'AND4_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:155' bound to instance 'U39' of component 'AND4_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:243]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:318' bound to instance 'U40' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:245]
+INFO: [Synth 8-3491] module 'AND4_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:155' bound to instance 'U41' of component 'AND4_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:247]
+INFO: [Synth 8-3491] module 'INV_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:318' bound to instance 'U42' of component 'INV_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:249]
+INFO: [Synth 8-3491] module 'AND2_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:116' bound to instance 'U43' of component 'AND2_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:251]
+INFO: [Synth 8-3491] module 'AND3_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:135' bound to instance 'U44' of component 'AND3_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:253]
+INFO: [Synth 8-3491] module 'FF_JK_NSCLR_CO_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:273' bound to instance 'U45' of component 'FF_JK_NSCLR_CO_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:255]
+INFO: [Synth 8-638] synthesizing module 'FF_JK_NSCLR_CO_NI' [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:285]
+INFO: [Synth 8-256] done synthesizing module 'FF_JK_NSCLR_CO_NI' (9#1) [M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:285]
+INFO: [Synth 8-3491] module 'DIGITAL_HIGH_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:257' bound to instance 'U46' of component 'DIGITAL_HIGH_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:257]
+INFO: [Synth 8-3491] module 'CNTR_4BIN_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:213' bound to instance 'U47' of component 'CNTR_4BIN_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:259]
+INFO: [Synth 8-3491] module 'CNTR_4BIN_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:213' bound to instance 'U48' of component 'CNTR_4BIN_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:261]
+INFO: [Synth 8-3491] module 'CNTR_4BIN_S_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:213' bound to instance 'U49' of component 'CNTR_4BIN_S_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:263]
+INFO: [Synth 8-3491] module 'DIGITAL_HIGH_NI' declared at 'M:/CE 264/stage2/vga/vsynchtest_pkg.vhd:257' bound to instance 'U50' of component 'DIGITAL_HIGH_NI' [M:/CE 264/stage2/vga/vsynchtest.vhd:265]
+WARNING: [Synth 8-3848] Net PLD5/Pixelclock in module/entity vsynchtest does not have driver. [M:/CE 264/stage2/vga/vsynchtest.vhd:165]
+INFO: [Synth 8-256] done synthesizing module 'vsynchtest' (10#1) [M:/CE 264/stage2/vga/vsynchtest.vhd:34]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 323.938 ; gain = 116.617
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin U45:CLK to constant 0 [M:/CE 264/stage2/vga/vsynchtest.vhd:255]
+WARNING: [Synth 8-3295] tying undriven pin U47:CLK to constant 0 [M:/CE 264/stage2/vga/vsynchtest.vhd:259]
+WARNING: [Synth 8-3295] tying undriven pin U48:CLK to constant 0 [M:/CE 264/stage2/vga/vsynchtest.vhd:261]
+WARNING: [Synth 8-3295] tying undriven pin U49:CLK to constant 0 [M:/CE 264/stage2/vga/vsynchtest.vhd:263]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 323.938 ; gain = 116.617
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [M:/CE 264/stage2/vsynchtest1/Basys3_Master.xdc]
+Finished Parsing XDC File [M:/CE 264/stage2/vsynchtest1/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [M:/CE 264/stage2/vsynchtest1/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vsynchtest_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/vsynchtest_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 606.023 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 606.023 ; gain = 398.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 606.023 ; gain = 398.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 606.023 ; gain = 398.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 606.023 ; gain = 398.703
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'U14' (INV_NI) to 'U29'
+INFO: [Synth 8-223] decloning instance 'U35' (INV_NI) to 'U42'
+INFO: [Synth 8-223] decloning instance 'U34' (AND4_NI) to 'U41'
+INFO: [Synth 8-223] decloning instance 'U1' (DIGITAL_HIGH_NI) to 'U46'
+INFO: [Synth 8-223] decloning instance 'U1' (DIGITAL_HIGH_NI) to 'U50'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 6     
++---Registers : 
+	                4 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module CNTR_4BIN_S_NI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module FF_JK_NSCLR_CO_NI 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 606.023 ; gain = 398.703
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design vsynchtest has unconnected port CLK
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 606.023 ; gain = 398.703
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 606.023 ; gain = 398.703
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (U18/Q_reg[3]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U18/Q_reg[2]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U49/Q_reg[3]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U49/Q_reg[2]) is unused and will be removed from module vsynchtest.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 606.023 ; gain = 398.703
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 606.023 ; gain = 398.703
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 606.023 ; gain = 398.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 606.023 ; gain = 398.703
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (U48/Q_reg[3]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U48/Q_reg[2]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U48/Q_reg[1]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U48/Q_reg[0]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U47/Q_reg[3]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U47/Q_reg[2]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U47/Q_reg[1]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U47/Q_reg[0]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U49/Q_reg[1]) is unused and will be removed from module vsynchtest.
+WARNING: [Synth 8-3332] Sequential element (U49/Q_reg[0]) is unused and will be removed from module vsynchtest.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 606.023 ; gain = 398.703
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 606.023 ; gain = 398.703
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 606.023 ; gain = 398.703
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 606.023 ; gain = 398.703
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 606.023 ; gain = 398.703
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 606.023 ; gain = 398.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 606.023 ; gain = 398.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 606.023 ; gain = 398.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 606.023 ; gain = 398.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     2|
+|2     |LUT2 |     3|
+|3     |LUT3 |     3|
+|4     |LUT4 |     3|
+|5     |LUT5 |     3|
+|6     |LUT6 |     2|
+|7     |FDRE |    11|
+|8     |OBUF |     3|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+------------------+------+
+|      |Instance |Module            |Cells |
++------+---------+------------------+------+
+|1     |top      |                  |    30|
+|2     |  U16    |CNTR_4BIN_S_NI    |    12|
+|3     |  U17    |CNTR_4BIN_S_NI_0  |    10|
+|4     |  U18    |CNTR_4BIN_S_NI_1  |     4|
+|5     |  U45    |FF_JK_NSCLR_CO_NI |     1|
++------+---------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 606.023 ; gain = 398.703
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 606.023 ; gain = 114.098
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 606.023 ; gain = 398.703
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+77 Infos, 20 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 606.023 ; gain = 398.156
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 606.023 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 28 14:19:01 2019...
